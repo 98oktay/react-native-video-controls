@@ -86,6 +86,7 @@ export default class VideoPlayer extends Component {
             onScreenTouch: this._onScreenTouch.bind( this ),
             onEnterFullscreen: this.props.onEnterFullscreen,
             onExitFullscreen: this.props.onExitFullscreen,
+            onToggleControls: this.props.onToggleControls,
             onLoadStart: this._onLoadStart.bind( this ),
             onProgress: this._onProgress.bind( this ),
             onLoad: this._onLoad.bind( this ),
@@ -411,6 +412,8 @@ export default class VideoPlayer extends Component {
             this.hideControlAnimation();
             this.clearControlTimeout();
         }
+        
+        typeof this.events.onToggleControls === 'function'  this.events.onToggleControls(state.showControls);        
 
         this.setState( state );
     }
