@@ -413,7 +413,7 @@ export default class VideoPlayer extends Component {
             this.clearControlTimeout();
         }
         
-        typeof this.events.onToggleControls === 'function'  this.events.onToggleControls(state.showControls);        
+        typeof this.events.onToggleControls === 'function' && this.events.onToggleControls(state.showControls);        
 
         this.setState( state );
     }
