@@ -319,7 +319,7 @@ export default class VideoPlayer extends Component {
             ),
             Animated.timing(
                 this.animations.topControl.marginTop,
-                { toValue: -100 }
+                { toValue: -10 }
             ),
             Animated.timing(
                 this.animations.bottomControl.opacity,
@@ -327,7 +327,7 @@ export default class VideoPlayer extends Component {
             ),
             Animated.timing(
                 this.animations.bottomControl.marginBottom,
-                { toValue: -100 }
+                { toValue: -10 }
             ),
         ]).start();
     }
@@ -1312,18 +1312,19 @@ const styles = {
         },
         track: {
             backgroundColor: '#333',
-            height: 1,
+            height: 3,
             position: 'relative',
             top: 14,
             width: '100%'
         },
         fill: {
-            backgroundColor: '#FFF',
-            height: 1,
+            backgroundColor: '#F44',
+            height: 3,
             width: '100%'
         },
         handle: {
             position: 'absolute',
+            backgroundColor: 'transparent',            
             marginLeft: -7,
             height: 28,
             width: 28,
