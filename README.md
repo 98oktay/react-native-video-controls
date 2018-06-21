@@ -64,6 +64,7 @@ These are various events that you can hook into and fire functions on in the com
 | ------------------ | ---------------------------------------------------------------------------------- |
 | onEnterFullscreen  | Fired when the video enters fullscreen after the fullscreen button is pressed      |
 | onExitFullscreen   | Fired when the video exits fullscreen after the fullscreen button is pressed       |
+| onToggleControls   | Fired when touching the video controls                                             |
 | onError            | Fired when an error is encountered when loading the video                          |
 | onPause            | Fired when the video is paused after the play/pause button is pressed              |
 | onPlay             | Fired when the video begins playing after the play/pause button is pressed         |
